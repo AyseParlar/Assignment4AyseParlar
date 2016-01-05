@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+    <style type="text/css">
+        input, textarea, select, button {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Create</h1>
+<form action="." method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>
